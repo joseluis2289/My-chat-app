@@ -5,6 +5,20 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var cors = require("cors");
 require("dotenv").config();
+const mongoose = require('mongoose');
+
+mongoose.connect(
+  process.env.URL,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  },
+  () => {
+    console.log("Connected to MongoDB");
+  }
+); 
+
+
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
