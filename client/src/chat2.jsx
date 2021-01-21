@@ -12,7 +12,7 @@ function Chat2() {
   useEffect(() => {
     axios({
       method: "GET",
-      url: `http://localhost:3000/users/recive`,
+      url: `/users/recive`,
     })
       .then((res) => {
         console.log("GET METHOD", res.data);
@@ -28,7 +28,7 @@ function Chat2() {
 
     await axios({
       method: "POST",
-      url: "http://localhost:3000/users/chat",
+      url: "/users/chat",
       data: text,
     })
       .then((res) => {
@@ -40,7 +40,7 @@ function Chat2() {
 
     await axios({
       method: "GET",
-      url: `http://localhost:3000/users/recive`,
+      url: `/users/recive`,
     })
       .then((res) => {
         console.log("GET METHOD Chat 2", res.data);
