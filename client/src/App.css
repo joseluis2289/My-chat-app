@@ -1,0 +1,36 @@
+.containerChat {
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  margin: auto;
+}
+.containerText {
+  padding: 10px;
+  height: 400px;
+  background-color: #dddd;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+.chat-form {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+.text-chat {
+  background-color: #16c6dd;
+  color: white;
+  width: 250px;
+  border-radius: 2px 20px 0 18px;
+  box-shadow: 0 0 2px #000;
+  padding: 10px;
+}
+.text-chat2 {
+  background-color: #ffe6cb;
+  color: black;
+  width: 250px;
+  border-radius: 2px 20px 0 18px;
+  box-shadow: 0 0 2px #000;
+  padding: 10px;
+}
+.textInput {
+  width: 302px;
+}
